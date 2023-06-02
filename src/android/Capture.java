@@ -83,7 +83,10 @@ public class Capture extends CordovaPlugin {
             storagePermissions = new String[]{
             };
         } else {
-            
+            storagePermissions = new String[] {
+                Manifest.permission.READ_EXTERNAL_STORAGE,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE
+            };
         }
     }
 
